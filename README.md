@@ -1,1 +1,1 @@
-# HTML
+# HTML - Clase 2 "Noticia"
