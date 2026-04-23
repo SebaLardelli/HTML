@@ -1,13 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticia</title>
+</head>
+
 <body>
+
   <div class="button">
-    <a class="blank" href="./clase_2/index.html">Next News</a>
+    <a class="blank" href="./clase_2/formulario.html">Next News</a>
   </div>
 
   <article class="container">
     <header>
       <figure>
         <img class="ph"
-          src=https://www.clarin.com/img/2026/04/01/-2G1M3NH__1256x620__2.jpg#1775017404620"
+          src="https://www.clarin.com/img/2026/04/01/-2G1M3NH__1256x620__2.jpg#1775017404620"
           alt="AC/DC en River Plate ante miles de personas">
 
         <figcaption>
@@ -27,7 +36,7 @@
 
       <div class="headLine">
         <a class="ttl" href="https://www.clarin.com/espectaculos/acdc-despedida-argentina-fiesta-cumpleanos-feliz_0_IBFUMcfK0Z.html">
-          Cultural Comment
+          Clarín
         </a>
         <h1>
           AC/DC en Argentina: una despedida histórica en el Monumental
@@ -58,5 +67,36 @@
         con una producción de gran escala y un despliegue visual impactante.
       </p>
     </div>
+
+  
+    <section class="formulario">
+  <h2>Dejá tu opinión sobre el recital</h2>
+
+  <form action="#" method="POST" enctype="multipart/form-data">
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="puntaje">¿Qué te pareció el recital?</label><br>
+    <select id="puntaje" name="puntaje" required>
+      <option value="">Seleccionar</option>
+      <option value="excelente">Excelente</option>
+      <option value="muy_bueno">Muy bueno</option>
+      <option value="bueno">Bueno</option>
+      <option value="regular">Regular</option>
+      <option value="malo">Malo</option>
+    </select><br><br>
+
+    <label>¿Qué fue lo que más te gustó?</label><br>
+    <input 
   </article>
+
+  <footer>
+    <a href="https://www.acdc.com/tour/">Nuestra Página Oficial</a>
+  </footer>
+
 </body>
+</html>
