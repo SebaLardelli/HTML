@@ -1,9 +1,93 @@
-@media (max-width: 700px) {
+/* Desktop */
+@media (min-width: 1025px) {
+  body {
+    padding-bottom: 0;
+  }
 
   .encabezado {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .nav-inferior {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+
+  .logo {
+    font-size: 34px;
+  }
+
+  .navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
     gap: 10px;
-    text-align: center;
+  }
+
+  .contenido,
+  #formulario,
+  footer {
+    max-width: 92%;
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .seccion {
+    font-size: 28px;
+  }
+
+  .contenido p,
+  .lista-datos li,
+  .pasos li {
+    font-size: 17px;
+  }
+
+  .nav-inferior {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  body {
+    padding-bottom: 70px;
+  }
+
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     padding: 14px 16px;
   }
 
@@ -12,14 +96,29 @@
   }
 
   .navegacion {
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
+  }
+
+  .navegacion a {
+    flex: 1 1 48%;
+    text-align: center;
   }
 
   .contenido,
   #formulario,
   footer {
+    max-width: 100%;
     padding: 18px;
+  }
+
+  .ruta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
   }
 
   h1 {
@@ -36,4 +135,14 @@
     font-size: 16px;
   }
 
+  .lista-datos,
+  .pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-inferior {
+    display: flex;
+  }
 }
