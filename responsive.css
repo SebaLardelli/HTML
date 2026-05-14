@@ -1,0 +1,39 @@
+@media (max-width: 700px) {
+
+  .encabezado {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .navegacion {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contenido,
+  #formulario,
+  footer {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .seccion {
+    font-size: 24px;
+  }
+
+  .contenido p,
+  .lista-datos li,
+  .pasos li {
+    font-size: 16px;
+  }
+
+}

@@ -1,13 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC en Argentina: una despedida histórica en el Monumental</title>
+</head>
 <body>
   <div class="button">
-    <a class="blank" href="./clase_2/index.html">Next News</a>
+    <a class="blank" href="./zz-top.html">Siguiente noticia</a>
   </div>
 
   <article class="container">
     <header>
       <figure>
         <img class="ph"
-          src=https://www.clarin.com/img/2026/04/01/-2G1M3NH__1256x620__2.jpg#1775017404620"
+          src="https://www.clarin.com/img/2026/04/01/-2G1M3NH__1256x620__2.jpg#1775017404620"
           alt="AC/DC en River Plate ante miles de personas">
 
         <figcaption>
@@ -27,7 +34,7 @@
 
       <div class="headLine">
         <a class="ttl" href="https://www.clarin.com/espectaculos/acdc-despedida-argentina-fiesta-cumpleanos-feliz_0_IBFUMcfK0Z.html">
-          Cultural Comment
+          Noticia en la web de Clarín
         </a>
         <h1>
           AC/DC en Argentina: una despedida histórica en el Monumental
@@ -59,4 +66,37 @@
       </p>
     </div>
   </article>
+
+  <section id="formulario">
+    <h2>Dejá tu experiencia en el show de AC/DC en Argentina</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre" required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <label for="opinion">Opinión:</label>
+      <textarea id="opinion" name="opinion" rows="4" required></textarea>
+      <br><br>
+
+      <label for="foto-show">Subí tu foto del show de AC/DC en Argentina:</label>
+      <input type="file" id="foto-show" name="foto-show" accept="image/*" required>
+      <br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>
+      <a href="https://www.acdc.com" target="_blank" rel="noopener noreferrer">Página Oficial</a> |
+      <a href="https://www.instagram.com/acdc/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+  </footer>
 </body>
+
+</html>
